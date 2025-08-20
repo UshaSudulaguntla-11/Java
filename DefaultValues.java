@@ -8,13 +8,13 @@ class DefaultValues{
 	char c;
 
 	public static void main(String args[]){
-	DefaultValues v1=new DefaultValues();
-		System.out.println(v1.b);
-		System.out.println(v1.s);
-		System.out.println(v1.i);
-		System.out.println(v1.l);
-		System.out.println(v1.f);
-		System.out.println(v1.d);
-		System.out.println(v1.c);
+	DefaultValues p=new DefaultValues();
+		System.out.println(p.b);
+		System.out.println(p.s);
+		System.out.println(p.i);
+		System.out.println(p.l);
+		System.out.println(p.f);
+		System.out.println(p.d);
+		System.out.println(p.c);
 	}
 }
