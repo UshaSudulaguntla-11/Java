@@ -18,7 +18,7 @@ class Constructor{
 	
 	public static void main(String args[]){
 		Constructor c1=new Constructor();
-		Constructor c2=new Constructor("Ravi","24pa1a05");
+		Constructor c2=new Constructor("Usha","24pa1a05l9");
 		System.out.println(c2.name);
 	}
 }
