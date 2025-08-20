@@ -11,7 +11,7 @@ class MOverloading{
 	public static void main(String args[]){
 		MOverloading m1=new MOverloading();
 		m1.display(2,3);
-		m1.display("Ravi");
+		m1.display("Usha");
 		m1.display(1.5f,5.5f);
 	}
 }
