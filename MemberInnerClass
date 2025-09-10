@@ -1,0 +1,14 @@
+ class Outer1{
+	int data=50;
+	
+	class Inner{
+		void show(){
+			System.out.println("Data is:"+data);
+		}
+	}
+	public static void main(String[] args){
+		Outer1 o=new Outer1();
+		Outer1.Inner i=o.new Inner();
+		i.show();
+	}
+}
