@@ -1,0 +1,31 @@
+interface MyInterface {
+
+    void abstractMethod();
+
+    default void defaultMethod() {
+        System.out.println("Default method calling private static helper:");
+       privateStaticHelper();// Calling the private static method
+    }
+
+    static void staticMethod() {
+        System.out.println("Static method calling private static helper:");
+       privateStaticHelper();// Calling the private static method
+    }
+
+    private static void privateStaticHelper() {
+        System.out.println("This is a private static helper method.");
+    }
+}
+
+class Main implements MyInterface {
+    @Override
+    public void abstractMethod() {
+        System.out.println("Implementing abstractMethod.");
+    }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        obj.abstractMethod();
+        obj.defaultMethod();
+        MyInterface.staticMethod();
+    }
+}
